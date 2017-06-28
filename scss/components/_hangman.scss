@@ -1,44 +1,60 @@
 .hangman {
-  width: 100%;
-  height: 500px;
+  width: 400px;
+  height: 650px;
   border: 10px solid $yellow;
   border-radius: 20px;
   background: #000;
+  position: relative;
+  margin: 0 auto 50px;
 
   @each $part in $body-list {
     .#{$part} {
       background-image: url('/img/#{$part}.png');
       transform: scale(0.5);
+      background-repeat: no-repeat;
+      position: absolute;
+      display: none;
     }
   }
 
   .head {
     width: 143px;
     height: 180px;
+    left: 132.5px;
   }
 
   .body {
     width: 233px;
     height: 480px;
+    left: 87px;
+    top: 7px;
   }
 
   .left-arm {
     width: 112px;
     height: 401px;
+    left: 69px;
+    top: 50px;
   }
 
   .right-arm {
     width: 186px;
     height: 372px;
+    left: 198px;
+    top: 47px;
   }
 
   .left-leg {
     width: 155px;
     height: 593px;
+    left: 98px;
+    top: 147px;
   }
 
   .right-leg {
     width: 144px;
     height: 597px;
+    left: 170px;
+    top: 149px;
   }
 }

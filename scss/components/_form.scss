@@ -1,0 +1,39 @@
+form {
+  margin: 50px 0;
+
+  input[type='text'] {
+    border: 10px solid $yellow;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background: #000;
+    font-size: 20px;
+
+    &:active, &:focus {
+      outline: none;
+    }
+  }
+  input[type='submit'] {
+    background: #000;
+    color: $yellow;
+    border: 10px solid $yellow;
+    margin-left: 5px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+  }
+}
+
+button#play-again {
+  background: #000;
+  color: $yellow;
+  border: 10px solid $yellow;
+  margin-left: 5px;
+  margin-top: 50px;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 20px;
+  cursor: pointer;
+}
