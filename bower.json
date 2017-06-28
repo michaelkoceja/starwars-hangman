@@ -1,0 +1,20 @@
+{
+  "name": "starwars-hangman",
+  "description": "Starwars hangman",
+  "main": "index.js",
+  "authors": [
+    "Jared and Michael"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
