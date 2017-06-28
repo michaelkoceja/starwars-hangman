@@ -20,5 +20,9 @@
     line-height: 45px;
     margin: 0 10px;
     min-height: 55px;
+
+    &.dash {
+      border-bottom: none;
+    }
   }
 }
