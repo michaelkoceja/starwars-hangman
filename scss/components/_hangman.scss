@@ -1,0 +1,44 @@
+.hangman {
+  width: 100%;
+  height: 500px;
+  border: 10px solid $yellow;
+  border-radius: 20px;
+  background: #000;
+
+  @each $part in $body-list {
+    .#{$part} {
+      background-image: url('/img/#{$part}.png');
+      transform: scale(0.5);
+    }
+  }
+
+  .head {
+    width: 143px;
+    height: 180px;
+  }
+
+  .body {
+    width: 233px;
+    height: 480px;
+  }
+
+  .left-arm {
+    width: 112px;
+    height: 401px;
+  }
+
+  .right-arm {
+    width: 186px;
+    height: 372px;
+  }
+
+  .left-leg {
+    width: 155px;
+    height: 593px;
+  }
+
+  .right-leg {
+    width: 144px;
+    height: 597px;
+  }
+}

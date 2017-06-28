@@ -1,3 +1,8 @@
-h1 {
-  color: red;
+@font-face {
+  src: url('/fonts/STJEDISE.ttf');
+  font-family: 'sw-font';
 }
+
+$heading-font: 'sw-font';
+$yellow: #ffd700;
+$body-list: ('head', 'body', 'left-arm', 'right-arm', 'left-leg', 'right-leg');
