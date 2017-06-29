@@ -28,7 +28,7 @@ $(document).ready(function() {
   $('form').submit(function(e) {
     e.preventDefault();
     var guessedLetter = $('#guessed-letter').val();
-
+    $('#guessed-letter').val('');
     starwars.guess(guessedLetter, displayLetter, displayPiece);
 
     if (starwars.checkForLoser()) {
@@ -38,5 +38,8 @@ $(document).ready(function() {
       alert('YOU WINNNN!!!!!');
     }
 
+  });
+  $('#play-again').click(function(){
+    window.location = window.location;
   });
 });
